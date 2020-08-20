@@ -9,7 +9,7 @@ router.get('/', (req,res,next) => {
 })
 
 router.post('/', (req,res,next) => {
-    res.status(200).json({
+    res.status(201).json({
         message : 'Handling POST request to /products'
     })
 })
@@ -42,7 +42,7 @@ router.delete('/:productId', (req,res,next) =>{
     res.status(200).json({
         message: 'Delete Product!'
     })
-})
+});
 
 
 module.exports = router;
